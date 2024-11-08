@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@)*o4atp!1p^sy0^zxc9u7i-47qu7esh34hl35xo5%_^ki=6ow'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'MyRemoteDesk.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'employee',
-        'USER': 'root',
+        'NAME': '',
+        'USER': '',
         'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'HOST': '',
+        'PORT': '',
         'OPTIONS': {
             'sql_mode': 'traditional',
         },
@@ -159,5 +159,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "xyz.com"
-EMAIL_HOST_PASSWORD = "sdpx cuwl"
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
