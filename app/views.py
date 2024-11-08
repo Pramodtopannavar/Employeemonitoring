@@ -186,7 +186,7 @@ def contact(request):
         subject = 'MyRemoteDesk - New Enquiry'
         message = f'Name : {cname}, Email : {cemail}, Query : {cquery}'
         email_from = settings.EMAIL_HOST_USER
-        recipient_list = ["pramodtopannavar17@gmail.com"]
+        recipient_list = [""]
         send_mail(subject, message, email_from, recipient_list)
         send_mail(subject, "YOUR QUERY WILL BE PROCESSED! WITHIN 24 HOURS", email_from, [cemail])
         messages.success(request, "Your Query has been recorded.")
